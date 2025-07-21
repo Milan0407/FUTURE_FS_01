@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milan Chauhan-Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <div class="animated-bg"></div>
+
+    <nav>
+      <div class="nav-container">
+        <div class="logo">Milan Chauhan</div>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <section id="hero">
+      <div class="container">
+        <div class="hero-content fade-in">
+          <img
+            src="assets/milanchauhan.jpg"
+            alt="Milan Chauhan"
+            class="profile-img"
+          />
+          <h1 class="hero-title">Milan Chauhan</h1>
+          <p class="hero-subtitle">Full Stack Developer</p>
+          <p class="hero-description">
+            Passionate developer creating amazing web experiences with modern
+            technologies. Specialized in Java backend development and responsive
+            frontend design.
+          </p>
+          <div>
+            <a href="assets/resume (3).pdf" class="btn btn-primary"
+              >Download CV</a
+            >
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/milan-chauhan-929837263/"
+              class="social-link"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/Milu723"
+              class="social-link"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:example@gmail.com" class="social-link">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title fade-in">About Me</h2>
+        <div class="about-content">
+          <div class="about-text fade-in">
+            <h3>Hello! I'm Milan Chauhan</h3>
+            <p>
+              I'm a passionate Full Stack Developer with a strong foundation in
+              Java and web technologies. Currently pursuing my Bachelor's in
+              Computer Science Engineering, I love creating efficient, scalable
+              solutions that make a real impact.
+            </p>
+            <p>
+              My journey in programming started with curiosity and has evolved
+              into a passion for building applications that solve real-world
+              problems. I enjoy the entire development process, from initial
+              concept to deployment and maintenance.
+            </p>
+          </div>
+          <div class="about-stats fade-in">
+            <div class="stat-card">
+              <div class="stat-number">3+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">1+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Technologies</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">∞</div>
+              <div class="stat-label">Passion for Learning</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title fade-in">Skills & Technologies</h2>
+        <div class="skills-grid">
+          <div class="skill-category fade-in">
+            <h3>Frontend Development</h3>
+            <div class="skill-item">
+              <span class="skill-name">HTML</span>
+              <span class="skill-level">Expert</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">CSS</span>
+              <span class="skill-level">Expert</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Responsive Design</span>
+              <span class="skill-level">Expert</span>
+            </div>
+          </div>
+
+          <div class="skill-category fade-in">
+            <h3>Backend Development</h3>
+            <div class="skill-item">
+              <span class="skill-name">Java</span>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Spring Boot</span>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Node.js</span>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Express.js</span>
+              <span class="skill-level">Intermediate</span>
+            </div>
+          </div>
+
+          <div class="skill-category fade-in">
+            <h3>Database & Tools</h3>
+            <div class="skill-item">
+              <span class="skill-name">MySql</span>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Git</span>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">MongoDB</span>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Problem Solving</span>
+              <span class="skill-level">Expert</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title fade-in">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card fade-in">
+            <div class="project-image">🌐</div>
+            <div class="project-content">
+              <h3 class="project-title">E-Commerce Platform</h3>
+              <p class="project-description">
+                A full-stack e-commerce application built with Java Spring Boot
+                backend and responsive frontend. Features include user
+                authentication, product catalog, and secure payment integration.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/Milu723" class="btn btn-secondary"
+                  >GitHub</a
+                >
+                <a href="#" class="btn btn-primary">Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card fade-in">
+            <div class="project-image">📱</div>
+            <div class="project-content">
+              <h3 class="project-title">Task Management System</h3>
+              <p class="project-description">
+                A collaborative task management application with real-time
+                updates. Built using Node.js, Express.js, and PostgreSQL with a
+                modern, intuitive user interface.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/Milu723" class="btn btn-secondary"
+                  >GitHub</a
+                >
+                <a href="#" class="btn btn-primary">Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card fade-in">
+            <div class="project-image">🎯</div>
+            <div class="project-content">
+              <h3 class="project-title">Data Structures Visualizer</h3>
+              <p class="project-description">
+                Interactive web application to visualize common data structures
+                and algorithms. Perfect for learning and teaching fundamental
+                computer science concepts.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/Milu723" class="btn btn-secondary"
+                  >GitHub</a
+                >
+                <a href="#" class="btn btn-primary">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-content">
+          <h2 class="section-title fade-in">Get In Touch</h2>
+          <p class="hero-description fade-in">
+            I'm always open to discussing new opportunities and interesting
+            projects. Let's connect and create something amazing together!
+          </p>
+
+          <div class="contact-info">
+            <div class="contact-card fade-in">
+              <div class="contact-icon">📧</div>
+              <h3>Email</h3>
+              <p><a href="mailto:example@gmail.com">example@gmail.com</a></p>
+            </div>
+
+            <div class="contact-card fade-in">
+              <div class="contact-icon">💼</div>
+              <h3>LinkedIn</h3>
+              <p>
+                <a href="https://www.linkedin.com/in/milan-chauhan-929837263/"
+                  >Connect with me</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem">
+            <a href="mailto:example@gmail.com" class="btn btn-primary"
+              >Send Message</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 Milan Chauhan. All rights reserved. Built with ❤️ and lots
+          of ☕
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
