@@ -29,12 +29,10 @@
         -webkit-backdrop-filter: blur(10px);
         border: 1px solid rgba(255, 255, 255, 0.1);
       }
-      .skill-card:hover {
+      .skill-card:hover,
+      .project-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 10px 20px rgba(56, 178, 172, 0.1);
-      }
-      .project-card-placeholder {
-        border-style: dashed;
       }
       /* Scrollbar styling */
       ::-webkit-scrollbar {
@@ -178,6 +176,7 @@
             <a
               href="https://www.linkedin.com/in/milan-chauhan-929837263/"
               target="_blank"
+              rel="noopener noreferrer"
               class="text-slate-400 hover:text-teal-400 transition duration-300"
             >
               <svg
@@ -196,6 +195,7 @@
             <a
               href="https://github.com/Milu723"
               target="_blank"
+              rel="noopener noreferrer"
               class="text-slate-400 hover:text-teal-400 transition duration-300"
             >
               <svg
@@ -228,7 +228,7 @@
       </section>
 
       <!-- About Section -->
-      <section id="about" class="py-28">
+      <section id="about" class="py-24">
         <h2 class="text-3xl md:text-4xl font-bold text-center">
           About <span class="gradient-text">Me</span>
         </h2>
@@ -238,11 +238,12 @@
           <div class="w-full p-8 rounded-lg glass-effect">
             <p class="text-slate-300 leading-relaxed text-lg">
               I'm a passionate Full Stack Developer with a strong foundation in
-              Java and web technologies. Currently pursuing my Bachelor's in
-              Computer Science Engineering, my journey in programming started
-              with curiosity and has evolved into a passion for building
-              applications that solve real-world problems. I love creating
-              efficient, scalable solutions that make a real impact.
+              Java and the MERN stack. As a Computer Science Engineering
+              student, my journey in programming started with curiosity and has
+              evolved into a passion for building applications that solve
+              real-world problems. I love creating efficient, scalable solutions
+              that make a real impact and am currently seeking opportunities to
+              apply my skills to new and exciting projects.
             </p>
           </div>
         </div>
@@ -256,7 +257,6 @@
         <div
           class="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-6xl mx-auto"
         >
-          <!-- Skill Card Example -->
           <div
             class="skill-card p-6 rounded-lg text-center transition-all duration-300 glass-effect"
           >
@@ -325,131 +325,161 @@
         <h2 class="text-3xl md:text-4xl font-bold text-center">
           My <span class="gradient-text">Projects</span>
         </h2>
-        <p class="text-center mt-4 text-slate-400 max-w-2xl mx-auto">
-          Exciting new projects are on the way. Stay tuned!
-        </p>
 
         <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Project Card Placeholder 1 -->
+          <!-- Project 1: Rock Paper Scissors -->
           <div
-            class="p-6 rounded-lg glass-effect project-card-placeholder border-2 border-slate-700 flex flex-col justify-between"
+            class="project-card p-6 rounded-lg glass-effect flex flex-col justify-between"
           >
             <div>
-              <div
-                class="w-full h-40 bg-slate-800 rounded-md mb-4 flex items-center justify-center"
-              >
-                <span class="text-slate-500">Project Image</span>
-              </div>
+              <img
+                src="assets/rockpaperscissor.avif"
+                alt="Rock Paper Scissors Game"
+                class="w-full h-40 object-cover rounded-md mb-4"
+                onerror="this.onerror=null;this.src='https://placehold.co/400x200/1f2937/e2e8f0?text=Project+Image';"
+              />
               <h3 class="text-xl font-bold text-slate-100">
-                Upcoming Project 1
+                Rock Paper Scissors Game
               </h3>
-              <p class="mt-2 text-slate-400">
-                A brief description of what this amazing project will be about
-                will go here.
+              <p class="mt-2 text-slate-400 text-sm">
+                A classic interactive game of Rock, Paper, Scissors built with
+                vanilla JavaScript, HTML, and CSS.
               </p>
               <div class="mt-4 flex flex-wrap gap-2">
                 <span
                   class="bg-slate-700 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded"
-                  >Tech 1</span
+                  >HTML</span
                 >
                 <span
                   class="bg-slate-700 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded"
-                  >Tech 2</span
+                  >CSS</span
+                >
+                <span
+                  class="bg-slate-700 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded"
+                  >JavaScript</span
                 >
               </div>
             </div>
             <div class="mt-6 flex justify-end space-x-4">
               <a
-                href="#"
-                class="text-slate-400 hover:text-teal-400 transition duration-300"
+                href="https://github.com/Milu723/rock-paper-scissors-game"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-slate-300 hover:text-teal-400 font-medium transition duration-300"
                 >Code</a
               >
               <a
-                href="#"
-                class="text-slate-400 hover:text-teal-400 transition duration-300"
+                href="https://rock-paper-scissors-game-lac-phi.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-slate-300 hover:text-teal-400 font-medium transition duration-300"
                 >Live Demo</a
               >
             </div>
           </div>
 
-          <!-- Project Card Placeholder 2 -->
+          <!-- Project 2: Personal Expense Tracker -->
           <div
-            class="p-6 rounded-lg glass-effect project-card-placeholder border-2 border-slate-700 flex flex-col justify-between"
+            class="project-card p-6 rounded-lg glass-effect flex flex-col justify-between"
           >
             <div>
-              <div
-                class="w-full h-40 bg-slate-800 rounded-md mb-4 flex items-center justify-center"
-              >
-                <span class="text-slate-500">Project Image</span>
-              </div>
+              <img
+                src="assets/expn.avif"
+                alt="Personal Expense Tracker"
+                class="w-full h-40 object-cover rounded-md mb-4"
+                onerror="this.onerror=null;this.src='https://placehold.co/400x200/1f2937/e2e8f0?text=Project+Image';"
+              />
               <h3 class="text-xl font-bold text-slate-100">
-                Upcoming Project 2
+                Personal Expense Tracker
               </h3>
-              <p class="mt-2 text-slate-400">
-                Details about this future project will be added soon. It's going
-                to be great!
+              <p class="mt-2 text-slate-400 text-sm">
+                A client-side utility to track daily expenses and manage
+                budgets. Data is saved in the browser's local storage.
               </p>
               <div class="mt-4 flex flex-wrap gap-2">
                 <span
                   class="bg-slate-700 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded"
-                  >Tech 3</span
+                  >HTML</span
                 >
                 <span
                   class="bg-slate-700 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded"
-                  >Tech 4</span
+                  >CSS</span
+                >
+                <span
+                  class="bg-slate-700 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded"
+                  >JavaScript</span
                 >
               </div>
             </div>
             <div class="mt-6 flex justify-end space-x-4">
               <a
-                href="#"
-                class="text-slate-400 hover:text-teal-400 transition duration-300"
+                href="https://github.com/Milu723/Expense-Tracker"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-slate-300 hover:text-teal-400 font-medium transition duration-300"
                 >Code</a
               >
               <a
-                href="#"
-                class="text-slate-400 hover:text-teal-400 transition duration-300"
+                href="https://expense-tracker-flame-phi-28.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-slate-300 hover:text-teal-400 font-medium transition duration-300"
                 >Live Demo</a
               >
             </div>
           </div>
-          <!-- Project Card Placeholder 3 -->
+
+          <!-- Project 3: Full-Stack Blog Platform -->
           <div
-            class="p-6 rounded-lg glass-effect project-card-placeholder border-2 border-slate-700 flex flex-col justify-between"
+            class="project-card p-6 rounded-lg glass-effect flex flex-col justify-between"
           >
             <div>
-              <div
-                class="w-full h-40 bg-slate-800 rounded-md mb-4 flex items-center justify-center"
-              >
-                <span class="text-slate-500">Project Image</span>
-              </div>
+              <img
+                src="assets/blog.avif"
+                alt="Full-Stack Blog Platform"
+                class="w-full h-40 object-cover rounded-md mb-4"
+                onerror="this.onerror=null;this.src='https://placehold.co/400x200/1f2937/e2e8f0?text=Project+Image';"
+              />
               <h3 class="text-xl font-bold text-slate-100">
-                Upcoming Project 2
+                Full-Stack Blog Platform
               </h3>
-              <p class="mt-2 text-slate-400">
-                Details about this future project will be added soon. It's going
-                to be great!
+              <p class="mt-2 text-slate-400 text-sm">
+                A MERN stack application allowing users to create and read blog
+                posts, featuring a React front-end and a Node.js/Express
+                back-end.
               </p>
               <div class="mt-4 flex flex-wrap gap-2">
                 <span
                   class="bg-slate-700 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded"
-                  >Tech 3</span
+                  >React</span
                 >
                 <span
                   class="bg-slate-700 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded"
-                  >Tech 4</span
+                  >Node.js</span
+                >
+                <span
+                  class="bg-slate-700 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded"
+                  >Express</span
+                >
+                <span
+                  class="bg-slate-700 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded"
+                  >MongoDB</span
                 >
               </div>
             </div>
             <div class="mt-6 flex justify-end space-x-4">
               <a
-                href="#"
-                class="text-slate-400 hover:text-teal-400 transition duration-300"
+                href="https://github.com/Milu723/fullstack-blog-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-slate-300 hover:text-teal-400 font-medium transition duration-300"
                 >Code</a
               >
               <a
-                href="#"
-                class="text-slate-400 hover:text-teal-400 transition duration-300"
+                href="https://fullstack-blog-app-plum.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-slate-300 hover:text-teal-400 font-medium transition duration-300"
                 >Live Demo</a
               >
             </div>
@@ -511,7 +541,6 @@
       });
 
       // --- Animation for background blobs ---
-      // This is a simple CSS animation, defined in the keyframes below
       const style = document.createElement("style");
       style.innerHTML = `
             @keyframes blob {
